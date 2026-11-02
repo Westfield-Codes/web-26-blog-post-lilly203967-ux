@@ -16,6 +16,7 @@
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button type="button" onclick="myFunction()">SHOW SPOILERS</button>
             <div class="container">
                 <a class="navbar-brand" href="#!">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -76,7 +77,7 @@
                             
                             <h2 class="fw-bolder mb-4 mt-5">Comparing intentions and endings (<strong>Warning: SPOILERS</strong>)</h2>
                         
-                        <table>
+                        <table class="SPOILER">
                             <tr>
                                 <th>Character/role</th>
                                 <th>Stance (where they stand)</th>
@@ -129,8 +130,8 @@ Sources:
     <li>Photo - <a href="https://calendar.ua.edu/event/the-crucible">https://calendar.ua.edu/event/the-crucible</a></li>
 </ul>
 <figure class="mb-4"><img class="img-fluid rounded" src="laying.png" alt="..."></figure> 
-<strong>(Instagram)</strong>: whsdramaclubma
-Im in the yellow shirt - laying down “sleeping”
+<p><strong>(Instagram)</strong>: whsdramaclubma
+Im in the yellow shirt - laying down “sleeping”</p>
 <figure class="mb-4"><img class="img-fluid rounded" src="grandpa.png" alt="..."></figure> 
 
                             
@@ -145,10 +146,12 @@ Im in the yellow shirt - laying down “sleeping”
                                 <!-- Comment with nested comments-->
                                 <div class="d-flex mb-4">
                                     <!-- Parent comment-->
-                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..."></div>
+                                    <div class="flex-shrink-0"><img class="rounded-circle" src="" alt="..."></div>
                                     <div class="ms-3">
-                                        <div class="fw-bold">Commenter Name</div>
-                                        If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
+                                        <div class="fw-bold">Carter</div>
+                                        I really like the way you made this. The links go to all the right places and the content 
+                                        itself is really interesting with the process and all, however maybe adding images near the links to the 
+                                        different cast members which shows who they look like.
                                         <!-- Child comment 1-->
                                         <div class="d-flex mt-4">
                                             <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..."></div>
@@ -229,7 +232,11 @@ Im in the yellow shirt - laying down “sleeping”
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    
-
+    <script>
+            alert("Java is working");
+        function ShowSpoiler() {
+            document.getElementsByClassName("SPOILER").style.visibility = "visible";
+        }
+    </script>
 </body></html>
 
